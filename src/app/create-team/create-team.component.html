@@ -1,0 +1,85 @@
+<!-- <ng2-completer [datasource]="batsmenList" [minSearchLength]="2"></ng2-completer> -->
+<div class="card">
+	
+  <div  [ngClass]="selectMode?'disnone':'disblock'">
+  	<div class="playerselection">
+	<mat-form-field>
+  <mat-label>User List</mat-label>
+  <mat-select [(ngModel)]="userName" (change)="onChangeUsers($event)">
+    <mat-option *ngFor="let user of userList" [value]="user">
+      {{user.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+  </div>
+</div>
+
+<div  [ngClass]="selectMode?'disblock':'disnone'">
+	<label>User name </label><span class="bolderView">{{userName}}</span>
+  <div class="playerselection">
+	<mat-form-field>
+  <mat-label>Batsmen List</mat-label>
+  <mat-select [(ngModel)]="batsmenName" (change)="onChangeCategoryList($event)">
+    <mat-option *ngFor="let bat of batsmenList" [value]="bat">
+      {{bat.playerName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<mat-form-field>
+  <mat-label>Bowler List</mat-label>
+  <mat-select [(ngModel)]="bowlerName" (change)="onChangeCategoryList($event)">
+    <mat-option *ngFor="let bowler of bowlerList" [value]="bowler">
+      {{bowler.playerName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Wicket Keeper List</mat-label>
+  <mat-select [(ngModel)]="keeperName" (change)="onChangeCategoryList($event)">
+    <mat-option *ngFor="let keeper of keeperList" [value]="keeper">
+      {{keeper.playerName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Allrounder List</mat-label>
+  <mat-select [(ngModel)]="allrounderName" (change)="onChangeCategoryList($event)">
+    <mat-option *ngFor="let allrounder of allrounderList" [value]="allrounder">
+      {{allrounder.playerName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+
+ <mat-table #table [dataSource]="dataSource" matSort>
+          <ng-container matColumnDef="playerName">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Player Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.playerName}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="categoryName">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Category Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.categoryName}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="action">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Action </mat-header-cell>
+            <mat-cell  *matCellDef="let element" (click)="deletePlayers(element)">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </mat-cell>
+          </ng-container>
+          
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;">
+          	
+          </mat-row>
+        </mat-table>
+
+
+	<div class="btnAction"> 
+		<button mat-raised-button color="primary" [ngClass]="flagValue?'disnone':'disblock'" (click)="savePlayersData()">Save</button>
+	</div>
+
+</div>

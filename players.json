@@ -1,0 +1,182 @@
+[
+				  {
+				    "playerId": 1,
+				    "playerName": "Virat Kohli",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 2,
+				    "playerName": "Sachin",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 3,
+				    "playerName": "MS Dhoni",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 4,
+				    "playerName": "Gangully",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 5,
+				    "playerName": "Sunesh Raina",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 6,
+				    "playerName": "Rohit Sharma",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 7,
+				    "playerName": "Ravindra Jadeja",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 8,
+				    "playerName": "Ravi Shastri",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 9,
+				    "playerName": "Dinesh Karthik",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 10,
+				    "playerName": "Mayank Agarwal",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 11,
+				    "playerName": "Sunil Joshi",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 12,
+				    "playerName": "Yuvraj Singh",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 13,
+				    "playerName": "Harbhajan Singh",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 14,
+				    "playerName": "Gautam Gambhir",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 15,
+				    "playerName": "Parthiv Patel",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 16,
+				    "playerName": "Lakshmipathy Balaji",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 17,
+				    "playerName": "Kuldeep Yadav",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 18,
+				    "playerName": "Abhimanyu Mithun",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 19,
+				    "playerName": "Ramesh Powar",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 20,
+				    "playerName": "V.R.V. Singh",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 21,
+				    "playerName": "S. Sreesanth",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 22,
+				    "playerName": "Piyush Chawla",
+				    "categoryId": 101,
+				    "categoryName": "batsmen"
+				  },
+				  {
+				    "playerId": 23,
+				    "playerName": "Ishant Sharma",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 24,
+				    "playerName": "Kapil Dev",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 25,
+				    "playerName": "Ail Kumble",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 26,
+				    "playerName": "Rahul Dravid",
+				    "categoryId": 104,
+				    "categoryName": "allrounder"
+				  },
+				  {
+				    "playerId": 27,
+				    "playerName": "V.V.S. Laxman",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  },
+				  {
+				    "playerId": 28,
+				    "playerName": "Zaheer Khan",
+				    "categoryId": 102,
+				    "categoryName": "bowler"
+				  },
+				  {
+				    "playerId": 29,
+				    "playerName": "Irfan Pathan",
+				    "categoryId": 104,
+				    "categoryName": "allrounder"
+				  },
+				  {
+				    "playerId": 30,
+				    "playerName": "Rahul Dravid",
+				    "categoryId": 103,
+				    "categoryName": "wicketKeeper"
+				  }
+				]
