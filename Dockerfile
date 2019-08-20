@@ -18,9 +18,4 @@ RUN ng build
 #COPY --chown=node:node . .
 COPY . .
 
-#ENV PORT 3077
-#EXPOSE 3077
-
-#ENV AuthorizationService_URL "http://169.46.38.55:31531"
-
 CMD [ "node", "app.js" ]
