@@ -236,6 +236,7 @@ export class CreateTeamComponent implements OnInit {
                         this.toastr.successToastr("Team saved sucessfully","Sucess");
                         this.playersList = [];
                         this.selectMode = false;
+                        setTimeout(() => { window.location.reload(); }, 1000);
                     },
                     error => {
                         console.log(error);
@@ -282,10 +283,13 @@ export class CreateTeamComponent implements OnInit {
             ResponseObj => {
                 this.reset();
                 this.initializePlayers();
+                this.toastr.successToastr("Team deleted Sucessfully","Sucess");
+                setTimeout(() => { window.location.reload(); }, 1000);
 
             },  
             error => {
                 console.log(error);
+                this.toastr.errorToastr("Server Error !!","Error");
 
             });
     }

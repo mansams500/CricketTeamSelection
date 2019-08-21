@@ -9,7 +9,6 @@ import { map } from 'rxjs/operators';
   )
 
 export class CricketTeamService {
-  API_URL = "http://localhost:3077";
   ApplicationURL : any;
 
   constructor(private http: HttpClient,private httpobj : Http) {
@@ -20,7 +19,7 @@ export class CricketTeamService {
      console.log(Players_List);
     const headers = new HttpHeaders().set("Access-Control-Allow-Origin", "*");
 
-    const url = `${this.API_URL}/saveTeamDetails`;
+    const url = '/saveTeamDetails';
     //let reportStatusId = approve ? "3" : "4";
 
     return this.http.post(url, {
