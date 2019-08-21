@@ -6,7 +6,8 @@ import { HttpModule } from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatAutocompleteModule, MatFormFieldModule,MatSelectModule,MatButtonModule,MatTableModule} from '@angular/material';
 import {CricketTeamService} from '../services/cricket-team.service';
-import { ViewTeamComponent } from './view-team/view-team.component'
+import { ViewTeamComponent } from './view-team/view-team.component';
+import {ToastrModule} from 'ng6-toastr-notifications';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ViewTeamComponent } from './view-team/view-team.component'
     HttpClientModule,
     MatSelectModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    ToastrModule.forRoot()
   ],
   declarations: [CreateTeamComponent, ViewTeamComponent],
   providers: [ CricketTeamService ],

@@ -4,7 +4,7 @@ import { ViewTeamComponent } from './view-team.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import {ToastrModule} from 'ng6-toastr-notifications';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule,MatLabel,MatSelectModule,MatButtonModule,MatTableModule} from '@angular/material';
 import { CreateTeamComponent } from '../create-team.component'
@@ -27,7 +27,8 @@ describe('ViewTeamComponent', () => {
         RouterTestingModule,
         FormsModule,
         HttpModule,
-        HttpClientModule
+        HttpClientModule,
+        ToastrModule.forRoot()
         ]
       })
     .compileComponents();

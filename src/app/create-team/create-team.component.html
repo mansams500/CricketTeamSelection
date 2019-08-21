@@ -48,7 +48,7 @@
 
           <ng-container matColumnDef="playerName">
             <mat-header-cell *matHeaderCellDef mat-sort-header> Player Name </mat-header-cell>
-            <mat-cell *matCellDef="let element"> {{element.playerName}} </mat-cell>
+            <mat-cell *matCellDef="let element"> {{element.playerName | titlecase}} </mat-cell>
           </ng-container>
           <ng-container matColumnDef="categoryName">
             <mat-header-cell *matHeaderCellDef mat-sort-header> Category Name </mat-header-cell>
@@ -57,7 +57,7 @@
             'clrBowl' : element.categoryName == 'bowler',
             'clrKeeper' : element.categoryName == 'wicketKeeper',
             'clrAllRounder' : element.categoryName == 'allrounder'
-         }"> {{element.categoryName}} </mat-cell>
+         }"> {{element.categoryName | titlecase}} </mat-cell>
           </ng-container>
           <ng-container matColumnDef="action">
             <mat-header-cell *matHeaderCellDef mat-sort-header> Action </mat-header-cell>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from "@angular/router";
 
+
 @Component({
   selector: 'app-view-team',
   templateUrl: './view-team.component.html',

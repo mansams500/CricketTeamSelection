@@ -5,7 +5,8 @@ import {FormControl} from "@angular/forms";
 import {Observable} from 'rxjs';
 import { MatTableDataSource, MatSort } from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
-import { CricketTeamService } from '../services/cricket-team.service'
+import { CricketTeamService } from '../services/cricket-team.service';
+import { ToastrManager } from 'ng6-toastr-notifications';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class CreateTeamComponent implements OnInit {
     editedPlayer = [];
 
     bowlerList = [];
-    batsmenList = [];
+    batsmenList = []; 
     keeperList = [];
     allrounderList = [];
     playersList = [];
@@ -38,7 +39,7 @@ export class CreateTeamComponent implements OnInit {
 
     @ViewChild(MatSort) sort: MatSort;
 
-    constructor(private http: Http,private _service : CricketTeamService) { 
+    constructor(private http: Http,private _service : CricketTeamService,public toastr: ToastrManager,) { 
 
     }
 
@@ -112,24 +113,24 @@ export class CreateTeamComponent implements OnInit {
                         this.filterData(this.players); 
                     }
                     else{
-                        alert("There are no Wicket Keepers in the Players list");
+                        this.toastr.errorToastr("There are no Wicket Keepers in the Players list","Error");
                     }
                 }
                 else{
-                    alert("Players list is less than expected(minimum 11 players)");
+                    this.toastr.errorToastr("Players list is less than expected(minimum 11 players)","Error");
                 }     	        
             },	
             error => {
                 switch(error.status){
                     case 400 :
-                    alert("JSON File Corrupted");  
+                    this.toastr.errorToastr("JSON File Corrupted","Error");  
                     break;
 
                     case 500 :
-                    alert("JSON File not");   
+                    this.toastr.errorToastr("JSON File not","Error");   
                     break;
                     default :
-                    alert("Server error!! Please try again later");
+                    this.toastr.errorToastr("Server error!! Please try again later","Error");
                 }
             });
 
@@ -216,11 +217,12 @@ export class CreateTeamComponent implements OnInit {
 
             for(let i=0; i< this.playersList.length; i++){
                 if(this.playersList[i].playerId == e["playerId"]){
+                    this.toastr.successToastr(this.playersList[i].playerName +" deleted sucessfully from the team list","Sucess");
                     this.playersList.splice(i,1);
                     this.initializeTable(this.playersList);
                 }
             }
-            alert("Player deleted sucessfully from the team list");
+          
 
         }
     }
@@ -231,7 +233,7 @@ export class CreateTeamComponent implements OnInit {
             if(isKeeper){
                 this._service.saveTeam(this.playersList,this.userID).subscribe(
                     response => {
-                        alert("Team saved sucessfully");
+                        this.toastr.successToastr("Team saved sucessfully","Sucess");
                         this.playersList = [];
                         this.selectMode = false;
                     },
@@ -241,14 +243,14 @@ export class CreateTeamComponent implements OnInit {
                     });
             }
             else{
-                alert("There should be at least one Wicket Keeper in the Team");
+                this.toastr.errorToastr("There should be at least one Wicket Keeper in the Team","Error");
             }
         }
         else if(counter < 11){
-            alert("Players List cannot be less than 11 members");
+            this.toastr.errorToastr("Players List cannot be less than 11 members","Error");
         }
         else{
-            alert("Players List cannot be more than 11 members");
+            this.toastr.errorToastr("Players List cannot be more than 11 members","Error");
         }
 
     }
