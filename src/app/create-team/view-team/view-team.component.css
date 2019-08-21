@@ -1,0 +1,15 @@
+.card{
+  	margin: 0 auto;
+	padding: 10px;
+	-webkit-box-shadow: #a5a5a5 0px 0 5px;
+	-moz-box-shadow: #a5a5a5 0 0 5x;
+	box-shadow: #a5a5a5 0 0 5px;
+	width: 90%;
+	background-image: -webkit-linear-gradient(top, #1e90ff 10px, transparent 10px);
+	border-radius: 7px;
+	margin-bottom: 50px;
+}
+
+.userselection{
+	margin: 10px;
+}

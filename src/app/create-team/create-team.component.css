@@ -6,19 +6,9 @@
 	display: block;
 }
 
-.card{
-  /* basic */ 
-margin: 0 auto;
-padding: 10px;
--webkit-box-shadow: #a5a5a5 0px 0 5px;
--moz-box-shadow: #a5a5a5 0 0 5x;
-box-shadow: #a5a5a5 0 0 5px;
-width: 90%;
-}
+
 
 .playerselection{
-	display: flex;
-	justify-content: space-around;
 	margin: 10px;
 }
 
@@ -30,4 +20,46 @@ width: 90%;
 	 margin: 10px;
     display: flex;
     justify-content: space-around;
+}
+
+.actionBtn{ 
+	cursor: pointer;
+}
+ 
+.clrBat{
+	color: #4486F9;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.clrBowl{
+	color: #3CB371;
+	font-weight: bold;
+    text-transform: uppercase;
+}
+.clrKeeper{
+	color: #FFA500;
+	font-weight: bold;
+    text-transform: uppercase;
+
+}
+.clrAllRounder{
+	color: #FF69B4;
+	font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.playerstable{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+}
+
+.mat-cell, .mat-header-cell{
+	text-align: justify;
+}
+
+.mat-form-field{
+	margin: 0px 40px;
 }

@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
  import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatAutocompleteModule, MatFormFieldModule,MatSelectModule,MatButtonModule,MatTableModule} from '@angular/material';
-import { Ng2CompleterModule } from 'ng2-completer';
-import {CricketTeamService} from '../services/cricket-team.service'
+import {CricketTeamService} from '../services/cricket-team.service';
+import { ViewTeamComponent } from './view-team/view-team.component'
 
 
 @NgModule({
@@ -17,13 +17,12 @@ import {CricketTeamService} from '../services/cricket-team.service'
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatFormFieldModule,
-    Ng2CompleterModule,
     HttpClientModule,
     MatSelectModule,
     MatButtonModule,
     MatTableModule
   ],
-  declarations: [CreateTeamComponent],
+  declarations: [CreateTeamComponent, ViewTeamComponent],
   providers: [ CricketTeamService ],
 })
 export class CreateTeamModule { }

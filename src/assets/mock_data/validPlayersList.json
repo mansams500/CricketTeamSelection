@@ -1,0 +1,68 @@
+[
+          {
+            "playerId": 1,
+            "playerName": "Virat Kohli",
+            "categoryId": 101,
+            "categoryName": "batsmen"
+          },
+          {
+            "playerId": 2,
+            "playerName": "Sachin",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 3,
+            "playerName": "MS Dhoni",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 4,
+            "playerName": "Gangully",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 5,
+            "playerName": "Sunesh Raina",
+            "categoryId": 101,
+            "categoryName": "batsmen"
+          },
+          {
+            "playerId": 6,
+            "playerName": "Rohit Sharma",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 7,
+            "playerName": "Ravindra Jadeja",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 8,
+            "playerName": "Ravi Shastri",
+            "categoryId": 101,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 9,
+            "playerName": "Dinesh Karthik",
+            "categoryId": 101,
+            "categoryName": "batsmen"
+          },
+          {
+            "playerId": 10,
+            "playerName": "Mayank Agarwal",
+            "categoryId": 102,
+            "categoryName": "bowler"
+          },
+          {
+            "playerId": 11,
+            "playerName": "Sunil Joshi",
+            "categoryId": 103,
+            "categoryName": "wicketkeeper"
+          }]
+  

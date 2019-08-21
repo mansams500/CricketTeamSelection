@@ -1,0 +1,19 @@
+ <div class="card">
+  <div >
+  	<div class="userselection">
+	<mat-form-field>
+  <mat-label>User List</mat-label>
+  <mat-select [(ngModel)]="userName" (change)="onChangeUsers($event)">
+    <mat-option *ngFor="let user of userList" [value]="user">
+      {{user.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+  </div>
+</div>
+
+
+<div>
+	<app-create-team [childUserData]="parentUserData"></app-create-team>
+</div>
+</div>

@@ -30,6 +30,19 @@ export class CricketTeamService {
     {headers});
   }
 
+   getAllPlayers()
+   {
+       return this.http.get('getAllPlayersList/'); 
+   }
+
+   checkUserExist(User_Id){
+        //return this.http.get('checkUserTeamExist/'+ User_Id).pipe(map(res => res )); 
+        return this.http.get('checkUserTeamExist/'+ User_Id); 
+   }
+
+   deleteTeam(User_ID){
+        return this.http.get('deleteFile/'+User_ID); 
+    }
  
   }
 
